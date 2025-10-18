@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@shared/*": ["../shared/*"]
+    },
+    "jsx": "react-jsx",
+    "isolatedModules": true,
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "module": "ESNext"
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
