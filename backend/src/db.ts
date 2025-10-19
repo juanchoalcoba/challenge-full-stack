@@ -1,6 +1,9 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 
-const MONGO_URI = "mongodb://127.0.0.1:27017/challenge-orders"; 
+dotenv.config(); // Carga las variables del archivo .env
+
+const MONGO_URI = process.env.MONGO_URI as string;
 
 export const connectDB = async () => {
   try {
